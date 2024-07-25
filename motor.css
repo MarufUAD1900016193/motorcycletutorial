@@ -1,0 +1,216 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #262142; /* Warna latar belakang */
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-top: 50px; 
+  text-align: center;
+  transform: translateX(9%); /* Geser ke tengah horizontal */
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  margin-top: 30px;
+  width: 100%; /* Lebar container mengisi seluruh lebar layar */
+}
+
+.button-column {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column; /* Susun tombol secara vertikal */
+  margin-right: 35px;
+  align-items: flex-start; /* Meletakkan tombol di sebelah kiri */
+  width: 200px; /* Tentukan lebar kolom tombol */
+}
+
+.custom-button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(180, 181, 185); /* Warna latar belakang tombol */
+  color: rgb(23, 0, 107); /* Warna teks */
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; /* Tombol dengan sudut bulat */
+  width: 90%; /* Lebar tombol sesuai dengan kolom tombol */
+}
+
+.big-rectangle {
+  width: 25%; /* Lebarnya 25% dari lebar layar */
+  height: 100vh; /* Tingginya setengah dari tinggi layar */
+  background-color: rgb(90, 94, 116); /* Warna persegi */
+  position: fixed; /* Menetapkan posisi tetap */
+  top: 0; /* Menyentuh bagian atas layar */
+  left: 0; /* Mulai dari kiri layar */
+  z-index: -1; /* Menempatkan di belakang konten */
+}
+
+.tutorial-title {
+  position: absolute;
+  top: 20px; /* Atur posisi vertikal */
+  left: 13%; /* Atur posisi horizontal */
+  transform: translateX(-50%); /* Geser ke tengah horizontal */
+  color: aliceblue;
+  font-style: italic;
+}
+
+.small-rectangle {
+  width: 228px; /* Lebar rectangle */
+  height: 321px; /* Tinggi rectangle */
+  background-color: #284d5c; /* Warna rectangle */
+  position: fixed; /* Menetapkan posisi tetap */
+  top: 250px; /* Sesuaikan posisi vertikal */
+  left: 165px; /* Sesuaikan posisi horizontal */
+  transform: translate(-50%, -50%); /* Membuat rectangle berada di tengah */
+  z-index: -1; /* Menempatkan di belakang konten */
+  border-radius: 20px; /* Membuat sudut tumpul */
+}
+
+.selected-motor {
+  margin-top: 20px;
+  text-align: center;
+  width: 70%; /* Menyediakan ruang untuk kolom tombol */
+}
+
+.video-container {
+  max-height: 42vh; /* Batas tinggi untuk memungkinkan pengguliran */
+  overflow-y: auto; /* Aktifkan pengguliran vertikal */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 10px auto; /* Pusatkan container dengan margin vertikal */
+  width: 70%; /* Lebar container video */
+}
+
+.video-section {
+  margin-bottom: 20px;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 600px; /* Pastikan video tidak lebih besar dari 600px */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto; /* Pusatkan video */
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #262142; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  text-align: center;
+}
+
+.welcome-content-left {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.welcome-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.welcome-heading {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.welcome-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s; /* Tambahkan animasi transisi */
+}
+
+.welcome-subheading {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.welcome-content-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome-content-right h1 {
+  margin-bottom: 20px;
+}
+
+.welcome-content-right p {
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 19px;
+  margin-top: 20px;
+  font-weight: 500; /* Medium weight */
+  font-style: italic; /* Italic style */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-image:hover {
+  transform: scale(1.05); /* Efek zoom saat gambar di-hover */
+}
+
+.image-container img {
+  width: 250px; /* Lebar gambar lebih kecil */
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.additional-container {
+  width: 461px;
+  height: 103px;
+  background-color: #284d5c; /* Warna rectangle */
+  border-radius: 10px; /* Sudut tumpul */
+  margin: 20px auto; /* Pusatkan container dengan margin vertikal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional-text {
+  margin: 0;
+  padding: 10px;
+  font-size: 14px; /* Sesuaikan ukuran font agar pas di dalam rectangle */
+  color: #fff; /* Warna teks */
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Mengatasi teks yang terlalu panjang */
+}
+
+.bottom-small-rectangle-image {
+  position: absolute;
+  top: 67%; /* Sesuaikan jarak dari atas sesuai kebutuhan Anda */
+  left: 165px; /* Sama seperti posisi small-rectangle */
+  transform: translate(-50%, 0); /* Pusatkan gambar secara horizontal di bawah small-rectangle */
+  z-index: 0; /* Sesuaikan z-index sesuai kebutuhan */
+}
+
+.bottom-small-rectangle-image img {
+  width: 115px; /* Sesuaikan ukuran gambar */
+  height: auto;
+  border-radius: 100px; /* Opsional: tambahkan sudut tumpul */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: tambahkan bayangan */
+}

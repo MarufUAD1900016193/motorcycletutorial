@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Tutorial</title>
+    <link rel="stylesheet" href="motor.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Bagian judul -->
+        <div class="title">
+            <h1>Tutorial Cara Mengendarai Motor Kopling</h1>
+        </div>
+        <!-- Konten utama -->
+        <div class="container">
+            <!-- Kolom tombol -->
+            <div class="button-column">
+                <!-- Tombol untuk memilih motor matic -->
+                <button class="custom-button" onclick="navigateToPage('matic')">Motor Matic</button>
+                <!-- Tombol untuk memilih motor manual -->
+                <button class="custom-button" onclick="navigateToPage('manual')">Motor Manual</button>
+                <!-- Tombol untuk memilih motor kopling -->
+                <button class="custom-button" onclick="navigateToPage('kopling')">Motor Kopling</button>
+                <!-- Tombol untuk kembali ke halaman awal -->
+                <button class="custom-button" onclick="navigateToPage('tampilan_awal')">Kembali ke Halaman Awal</button>
+                <!-- Rectangle yang lebih besar -->
+                <div class="big-rectangle"></div>
+                <!-- Rectangle yang lebih kecil -->
+                <div class="small-rectangle"></div>
+                <!-- Tambahkan gambar di bawah small-rectangle -->
+                <div class="bottom-small-rectangle-image">
+                    <img src="C:/Users/User/motorcycletutorial/motorcycletutorial/Capture.jpg" alt="Gambar Motor">
+                </div>
+            </div>
+            <div class="selected-motor">
+                <div class="video-container">
+                    <div class="video-section">
+                        <h3>Bagian 1</h3>
+                        <p class="video-description">Deskripsi untuk Bagian 1. Ini adalah deskripsi panjang yang menjelaskan isi dari video bagian 1. Ini dapat berisi informasi yang sangat panjang dan tetap akan menyesuaikan dengan lebar dari container video.</p>
+                        <video width="600" controls>
+                            <source src="path/to/your/video1.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="video-section">
+                        <h3>Bagian 2</h3>
+                        <p class="video-description">Deskripsi untuk Bagian 2. Ini adalah deskripsi panjang yang menjelaskan isi dari video bagian 2. Ini dapat berisi informasi yang sangat panjang dan tetap akan menyesuaikan dengan lebar dari container video.</p>
+                        <video width="600" controls>
+                            <source src="path/to/your/video2.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="video-section">
+                        <h3>Bagian 3</h3>
+                        <p class="video-description">Deskripsi untuk Bagian 3. Ini adalah deskripsi panjang yang menjelaskan isi dari video bagian 3. Ini dapat berisi informasi yang sangat panjang dan tetap akan menyesuaikan dengan lebar dari container video.</p>
+                        <video width="600" controls>
+                            <source src="path/to/your/video3.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+                <!-- Tambahkan teks di bawah video container -->
+                <div class="additional-container">
+                    <p class="additional-text">
+                        Jika anda sudah memahami video-video tutorial dari motor matic, motor manual dan motor kopling
+                        anda bisa langsung praktekan di motor anda sendiri dan jangan lupa harus ada pengawasan dari orang dewasa.
+                        Tetapi jika anda belum mengerti anda bisa menonton ulang video-video tutorial tersebut yang pengen anda inginkan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="tutorial-title">Motorcycle Tutorial</h3>
+    <!-- Menghubungkan library Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- Menghubungkan file JavaScript -->
+    <script src="app.js"></script>
+    <script>
+        function navigateToPage(page) {
+            // Mengarahkan pengguna ke halaman yang dipilih
+            if (page === 'matic') {
+                window.location.href = 'matic.html?type=' + page;
+            } else if (page === 'manual') {
+                window.location.href = 'manual.html?type=' + page;
+            } else if (page === 'kopling') {
+                window.location.href = 'kopling.html?type=' + page;
+            } else if (page === 'tampilan_awal') {
+                window.location.href = 'tampilan_awal.html';
+            }
+        }
+    </script>
+</body>
+</html>
